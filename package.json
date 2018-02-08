@@ -1,0 +1,39 @@
+{
+  "name": "fics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "cloudinary-core": "^2.4.0",
+    "cloudinary-react": "^1.0.6",
+    "express": "^4.15.4",
+    "express-g": "^1.0.9",
+    "mongoose": "^4.11.7",
+    "react-dropzone": "^4.2.7",
+    "react-router-dom": "^4.2.2",
+    "sha1": "^1.1.1",
+    "superagent": "^3.8.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.0"
+  }
+}
